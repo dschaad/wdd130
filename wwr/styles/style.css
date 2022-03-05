@@ -193,6 +193,7 @@ main section img {
     /* position: absolute; */
     display: flex;
     justify-content: center;
+    font-family: "Permanent Marker", 'Times New Roman', Times, serif;
 }
 .rivers-page h2 {
     margin: 20px 0px;
