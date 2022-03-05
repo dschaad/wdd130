@@ -183,6 +183,37 @@ main section img {
     grid-column: 8/10;
     grid-row: 2/3;
 }
+/* Rivers Page */
+.rivers-page {
+    color: white;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.rivers-page h1 {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+}
+.rivers-page h2 {
+    margin: 20px 0px;
+}
+.rivers-text {
+    background-color: #1D8A99;
+    text-align: left;
+    padding: 20px 20px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+.rivers-image {
+    width: 100%;
+    /* border: 10px solid #0BC9CD; */
+}
+.rivers-banner {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    /* margin-top: 50px; */
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -225,4 +256,3 @@ main section img {
         margin-top: 25px;
     }
 }
-            
