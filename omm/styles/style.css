@@ -19,6 +19,7 @@ header {
 }
 .logo {
     width: 80px;
+    padding-top: 10px;
     padding-left: 10px;
 }
 #logo-link {
