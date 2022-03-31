@@ -5,7 +5,6 @@ body {
 }
 h1, h2, h3, h4, a {
     font-family: "Press Start 2P", 'Times New Roman', Times, serif;
-    /* font-size: 100%; */
     color: #931F1D;
 }
 p {
@@ -60,20 +59,19 @@ nav a:nth-of-type(3) {grid-column: 3/4;}
     margin: 5% 0;
 }
 #statement {
-    display: grid;
-    grid-template: repeat(3, 1fr)/repeat(3, 1fr)
-}
-#statement img {
-    grid-area: 1/1/4/4;
-    z-index: -1;
+    margin: 5% 0;
+    position: relative;
 }
 #statement p {
-    grid-area: 2/2/3/3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     background-color: #009FB7;
-    border: 2px black solid;
-    padding: 5%;
-    font-size: 85%;
+    border: 2px #2E4052 solid;
+    margin: 0;
+    padding: 2%;
 }
 footer {
     display: grid;
@@ -103,6 +101,7 @@ footer h4:nth-of-type(3) {grid-column: 3/4;}
     grid-column: 1/3;
     color: #FF8811;
     text-align: center;
+    margin-top: 4%;
 }
 .mods img {
     max-width: 100%;
@@ -132,4 +131,79 @@ footer h4:nth-of-type(3) {grid-column: 3/4;}
 }
 .power {
     width: 100%;
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.faq h1 {
+    grid-column: 1/3;
+    text-align: center;
+    color: #FF8811;
+    margin-top: 4%;
+}
+.faq img {
+    max-width: 100%;
+}
+.questions {
+    grid-column: 1/2;
+}
+.questions h3 {
+    padding-bottom: 3%;
+}
+.images {
+    grid-column: 2/3;
+    margin: 5%;
+    margin-top: 8%;
+}
+.images img:nth-of-type(1) {margin-bottom: 2%;}
+#q1, #q2, #q3 {
+    background-color: #009FB7;
+    padding: 3% 5%;
+    margin: 5%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: block;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 2%;
+    }
+    #welcome {
+        display: block;
+        position: relative;
+    }
+    #welcome h1 {
+        position: absolute;
+    }
+    #statement {
+        position: static;
+        margin: 5% 0;
+    }
+    #statement p {
+        position: static;
+        left: 0;
+        top: 0;
+        transform: NONE;
+    }
+    footer {
+        display: flex;
+    }
+    footer h4 {
+        background-color: #009FB7;
+        margin: 0;
+        padding: 3%;
+    }
+    .mods {
+        display: block;
+    }
+    .faq {
+        display: block;
+    }
 }
